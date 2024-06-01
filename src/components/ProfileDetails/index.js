@@ -13,8 +13,8 @@ const apiStatusConstants = {
 
 class ProfileDetails extends Component {
   state = {
-    apiStatus: apiStatusConstants.initial,
     profileData: {},
+    apiStatus: apiStatusConstants.initial,
   }
 
   componentDidMount() {
