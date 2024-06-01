@@ -1,0 +1,137 @@
+.nav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+}
+
+.nav-content {
+  width: 90%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  max-width: 1110px;
+  padding: 10px 0 15px 0;
+}
+
+.navbar-mobile-logo-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-mobile-logo-container {
+    display: none;
+  }
+}
+
+.navbar-large-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  max-width: 1110px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-large-container {
+    display: none;
+  }
+}
+
+.website-logo {
+  width: 90px;
+  margin-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .website-logo {
+    width: 125px;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-end;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  /*.nav-menu {
+    display: none;
+  }*/ /* no use of this code line */
+
+  .nav-content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.nav-menu-item {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logout-desktop-btn {
+  font-family: 'Roboto';
+  background-color: #4f46e5;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 42px;
+}
+
+/*@media screen and (max-width: 767px) {
+  .logout-desktop-btn {
+   display: none;
+  }
+}*/ /* no use of this code line */
+
+.navbar-mobile-icons-container {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-mobile-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav-item-mobile-link {
+  font-size: 24px;
+  margin-right: 20px;
+  color: #ffffff;
+}
+
+/*@media screen and (min-width: 768px) {
+  .nav-mobile-btn {
+    display: none;
+  }
+}*/ /* no use of this code line */

@@ -1,0 +1,235 @@
+.job-item-details-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #121212;
+}
+
+.job-details-view-container {
+  width: 90%;
+  align-self: center;
+  max-width: 950px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  /* flex-grow: 1; */
+}
+
+@media screen and (min-width: 768px) {
+  .job-details-view-container {
+    padding-top: 35px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .job-details-view-container {
+    padding-top: 45px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .job-details-view-container {
+    padding-top: 55px;
+  }
+}
+
+.description-visit-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.visit-container {
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.visit-heading {
+  text-decoration: none;
+  color: #6366f1;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.visit-icon {
+  color: #6366f1;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.skills-heading,
+.life-at-company-heading {
+  margin: 0;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .skills-heading,
+  .life-at-company-heading {
+    margin-top: 25px;
+  }
+}
+
+.skills-list-container {
+  margin-top: 25px;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.life-at-company-description-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .life-at-company-description-image-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.life-at-company-description {
+  margin-top: 10px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.life-at-company-image {
+  width: 100%;
+  max-width: 430px;
+  height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .life-at-company-description {
+    width: 50%;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .life-at-company-image {
+    width: 45%;
+    height: 200px;
+  }
+}
+
+.similar-jobs-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 23px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.similar-jobs-list {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .similar-jobs-list {
+    gap: 25px;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+
+.job-item-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .job-item-loader-container {
+    width: 100%;
+  }
+}
+
+.job-item-error-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  padding-bottom: 64px;
+  flex-grow: 1; /* Can see diff grow in vertical direction */
+}
+
+@media screen and (min-width: 768px) {
+  .job-item-error-view-container {
+    width: 100%;
+    margin-top: 70px;
+    padding-bottom: 0px;
+  }
+}
+
+.job-item-failure-img {
+  width: 250px;
+  height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .job-item-failure-img {
+    width: 400px;
+    height: 350px;
+  }
+}
+
+.job-item-failure-heading-text {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .job-item-failure-heading-text {
+    font-size: 30px;
+  }
+}
+
+.job-item-failure-description {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 12px;
+  width: 90%;
+  max-width: 388px;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .job-item-failure-description {
+    font-size: 16px;
+  }
+}
+
+.job-item-failure-button {
+  padding: 8px 32px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
