@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+
 import {BsSearch} from 'react-icons/bs'
 
 import ProfileDetails from '../ProfileDetails'
@@ -57,14 +59,10 @@ const FiltersGroup = props => {
           {employmentTypesList.map(eachEmployeeType => {
             const {changeEmployeeList} = props
 
-            {
-              /*
-            const onSelectEmployeeType = event => {
-              console.log(event.target.value)
-              changeEmployeeList(event.target.value)
-            }
-            */
-            }
+            //  const onSelectEmployeeType = event => {
+            //   console.log(event.target.value)
+            //   changeEmployeeList(event.target.value)
+            //  }
 
             const onSelectEmployeeType = () => {
               changeEmployeeList(eachEmployeeType.employmentTypeId)
