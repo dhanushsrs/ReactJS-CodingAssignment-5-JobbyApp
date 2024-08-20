@@ -59,15 +59,15 @@ const FiltersGroup = props => {
           {employmentTypesList.map(eachEmployeeType => {
             const {changeEmployeeList} = props
 
-            //  const onSelectEmployeeType = event => {
-            //   console.log(event.target.value)
-            //   changeEmployeeList(event.target.value)
-            //  }
-
             const onSelectEmployeeType = () => {
               changeEmployeeList(eachEmployeeType.employmentTypeId)
               // console.log(eachEmployeeType.employmentTypeId)
             }
+
+            //  const onSelectEmployeeType = event => {
+            //   console.log(event.target.value)
+            //   changeEmployeeList(event.target.value)
+            //  }
 
             return (
               <li
